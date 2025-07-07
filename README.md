@@ -14,15 +14,11 @@ Một bộ schematic tự động tạo ra CQRS module hoàn chỉnh cho NestJS 
 
 ## 🚀 **Cài đặt**
 
-### Từ npm (sau khi publish):
-```bash
-npm install -g nest-cqrs-schematics
-```
 
 ### Từ local (development):
 ```bash
 # Clone hoặc download source code
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/duy-quoc289/nest-cqrs-schematics.git)
 cd nest-cqrs-schematics
 
 # Build schematic
@@ -37,8 +33,9 @@ npm install -g .
 # Cài đặt như dev dependency
 npm install --save-dev nest-cqrs-schematics
 
-# Hoặc link từ local
-npm link nest-cqrs-schematics
+# Hoặc từ pack
+npm pack
+npm install --save-dev path/to/source/nest-cqrs-schematics-1.0.0.tgz
 ```
 
 ## 📖 **Sử dụng**
