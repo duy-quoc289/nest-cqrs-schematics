@@ -19,18 +19,6 @@
       "description": "The path to create the module",
       "visible": false,
       "default": "src/modules"
-    },
-    "includeRepository": {
-      "type": "boolean",
-      "description": "Include repository pattern",
-      "default": true,
-      "x-prompt": "Include repository pattern?"
-    },
-    "includeValidation": {
-      "type": "boolean",
-      "description": "Include class-validator decorators in DTOs",
-      "default": true,
-      "x-prompt": "Include validation decorators?"
     }
   },
   "required": [

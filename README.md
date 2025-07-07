@@ -50,7 +50,7 @@ schematics nest-cqrs-schematics:cqrs-module --name=user
 schematics nest-cqrs-schematics:cqrs-module --name=product --dry-run
 
 # Tạo với options cụ thể
-schematics nest-cqrs-schematics:cqrs-module --name=order --includeRepository=false --includeValidation=true
+schematics nest-cqrs-schematics:cqrs-module --name=order
 ```
 
 ### 2. **Script trong package.json**
@@ -93,7 +93,7 @@ src/modules/user/
 │   ├── index.ts                      # Export DTOs
 │   ├── create-user.dto.ts            # Create DTO với validation
 │   └── update-user.dto.ts            # Update DTO
-└── repositories/                     # (nếu includeRepository = true)
+└── repositories/                     
     ├── index.ts                      # Export Repositories array
     └── user.repository.ts            # Repository pattern
 ```
@@ -104,8 +104,6 @@ src/modules/user/
 |--------|------|---------|-------------|
 | `name` | string | **required** | Tên của module |
 | `path` | string | `src/modules` | Đường dẫn tạo module |
-| `includeRepository` | boolean | `true` | Có tạo repository pattern không |
-| `includeValidation` | boolean | `true` | Có thêm validation decorators vào DTOs không |
 
 ## 📝 **Ví dụ code được tạo**
 
